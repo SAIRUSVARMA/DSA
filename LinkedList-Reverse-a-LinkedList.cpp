@@ -36,3 +36,5 @@ Node* reverseLinkedList(Node *head)
 
 //TC=O(N)
 //SC=O(N)[For recursive call stack]
+
+//Problem:https://leetcode.com/problems/reverse-linked-list/description/
