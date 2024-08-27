@@ -17,7 +17,7 @@ public:
 
         maxSum=max({maxSum, case_1 , case_2 , case_3});
         return max(case_2,case_3);
-        // in case_1 we already found the path and the answer and can't be used in recursion
+        // in case_1 we already found the path and the ans, we already used both sub trees so can't be used further in recursion.
         // so we only send from case_2 or case_3
 
     }
