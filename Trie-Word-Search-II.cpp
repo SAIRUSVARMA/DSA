@@ -153,9 +153,11 @@ public:
 Trie Insertion: O(L), where L is the total number of characters in all words.
 DFS: O(M * N * 4^W), where M is the number of rows, N is the number of columns, and W is the length of the longest word.
 */
-//SC:O(L+M*N)
+//SC:O(L*n+M*N+W)
 /*
-Trie: O(L) for storing the words.
+Trie: O(n*L) for storing the words.[here n is no of words, L is average length of words]
 DFS Stack: O(M * N) for storing recursion state and visited cells.
+Recursion Stack: O(W) [During the DFS search, the maximum depth of the recursion stack can go
+as deep as the length of the longest word (W).]
 */
 //Problem:https://leetcode.com/problems/word-search-ii/description/
