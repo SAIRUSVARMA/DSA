@@ -22,7 +22,11 @@ struct Node
    {
      return flag;
    }
-};
+   void duplicateEnd()
+   {
+      flag=false;
+   }
+;
 
 class Trie{
 public:
@@ -100,7 +104,7 @@ private:
         if (node->isEnd())
         {
             result.push_back(path);
-            node->setEnd();  // To avoid duplicate results
+            node->duplicateEnd();  // To avoid duplicate results
         }
 
         board[row][col] = '#';  // Mark as visited
