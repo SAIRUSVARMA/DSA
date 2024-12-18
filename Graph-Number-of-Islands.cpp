@@ -24,7 +24,7 @@ public:
         if(grid[i][j]=='0')
         return;
 
-        grid[i][j]='0';
+        grid[i][j]='0'; //(If grid[i][j]=='1', we change it to '0')
 
         dfs(grid,i+1,j);
         dfs(grid,i-1,j);
@@ -32,3 +32,7 @@ public:
         dfs(grid,i,j-1);
     }
 };
+
+//TC:O(N^2) or O(M*N) every cell is visited once.
+//SC:O(N^2) OR O(M*N) in the worst case for the recursion stack (if the grid is entirely land(1's)).
+//Problem:https://leetcode.com/problems/number-of-islands/
