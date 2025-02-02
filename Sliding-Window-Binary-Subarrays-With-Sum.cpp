@@ -18,3 +18,4 @@ public:
 
 //TC:O(N)
 //SC:O(N)
+//Problem:https://leetcode.com/problems/binary-subarrays-with-sum/
